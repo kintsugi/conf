@@ -1,0 +1,35 @@
+snippet fori
+for (let ${1:} in $2) {
+    $3
+}
+endsnippet
+
+snippet promise
+return new Promise((resolve, reject) => {
+	$1
+	return
+})
+endsnippet
+
+snippet then
+.then(($1) => {
+	$2
+	return
+})
+endsnippet
+
+snippet catch
+.catch((err) => {
+	throw err
+})
+endsnippet
+
+snippet thencatch
+.then(($1) => {
+	$2
+	return
+})
+.catch((err) => {
+	throw err
+})
+endsnippet
